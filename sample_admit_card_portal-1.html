@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Examination Admit Card — Sample Portal</title>
+<style>
+  :root { --navy:#12345a; --blue:#1769aa; --pale:#eef4fa; --border:#cbd5e1; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:Arial,Helvetica,sans-serif; background:#f2f5f8; color:#172334; }
+  header { background:var(--navy); color:white; padding:22px 16px; text-align:center; }
+  header .eyebrow { font-size:12px; letter-spacing:1.5px; opacity:.85; }
+  header h1 { margin:8px 0 4px; font-size:clamp(20px,4vw,29px); }
+  header p { margin:0; font-size:13px; opacity:.9; }
+  .notice { max-width:960px; margin:18px auto 0; padding:10px 14px; background:#fff7df; border:1px solid #e9cf83; color:#6a4b00; border-radius:7px; font-size:13px; }
+  main { max-width:960px; margin:18px auto 40px; padding:0 14px; }
+  .card { background:white; border:1px solid var(--border); border-radius:9px; overflow:hidden; box-shadow:0 4px 16px #142b4410; }
+  .card-title { background:var(--pale); padding:14px 18px; border-bottom:1px solid var(--border); color:var(--navy); font-weight:bold; text-align:center; }
+  .exam { text-align:center; padding:18px 14px 12px; }
+  .exam h2 { margin:0 0 7px; font-size:20px; color:var(--navy); }
+  .exam p { margin:0; color:#526174; font-size:13px; }
+  .content { display:grid; grid-template-columns:1fr 160px; gap:18px; padding:18px; }
+  .details { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 18px; }
+  .field { padding:11px 4px; border-bottom:1px solid #e5eaf0; min-width:0; }
+  .label { display:block; color:#65758a; font-size:11px; text-transform:uppercase; letter-spacing:.5px; margin-bottom:5px; }
+  .value { font-size:15px; font-weight:600; overflow-wrap:anywhere; }
+  .photo-wrap { text-align:center; }
+  .photo { width:132px; height:158px; border:1px solid #9aa9ba; background:#edf1f5; display:flex; align-items:center; justify-content:center; margin:auto; color:#66778a; font-size:12px; }
+  .signature { margin:12px auto 0; width:132px; height:42px; border-bottom:1px solid #9aa9ba; display:flex; align-items:center; justify-content:center; color:#66778a; font-size:11px; }
+  .section { padding:0 18px 18px; }
+  .section h3 { color:var(--navy); font-size:15px; border-bottom:1px solid var(--border); padding-bottom:8px; }
+  .instructions { font-size:13px; line-height:1.65; color:#445267; }
+  .qr-panel { display:flex; gap:18px; align-items:center; flex-wrap:wrap; background:#f8fafc; border-top:1px solid var(--border); padding:16px 18px; }
+  #qrcode { background:white; padding:8px; border:1px solid var(--border); min-width:116px; min-height:116px; }
+  .qr-copy { flex:1; min-width:220px; font-size:13px; color:#526174; line-height:1.5; }
+  .qr-copy strong { color:var(--navy); }
+  .url { word-break:break-all; font-size:12px; color:#1769aa; }
+  footer { text-align:center; padding:16px; color:#718096; font-size:11px; }
+  @media(max-width:620px) {
+    .content { grid-template-columns:1fr; }
+    .photo-wrap { grid-row:1; }
+    .details { grid-template-columns:1fr 1fr; }
+  }
+  @media(max-width:380px) { .details { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">EXAMINATION INFORMATION PORTAL</div>
+  <h1>ADMIT CARD</h1>
+  <p>Candidate Examination Details</p>
+</header>
+<div class="notice"><strong>DEMO DOCUMENT:</strong> This is a sample admit card webpage for demonstration only. It is not issued, verified, or endorsed by the Staff Selection Commission (SSC) or any government authority.</div>
+<main>
+  <div class="card">
+    <div class="card-title">E-ADMISSION CERTIFICATE</div>
+    <div class="exam">
+      <h2>Combined Graduate Level Examination — Sample</h2>
+      <p>Examination year: 2026 &nbsp; | &nbsp; Status: SAMPLE</p>
+    </div>
+    <div class="content">
+      <div class="details">
+        <div class="field"><span class="label">Candidate Name</span><span class="value">FAISAL SHAH</span></div>
+        <div class="field"><span class="label">Roll Number</span><span class="value">24061001234</span></div>
+        <div class="field"><span class="label">Registration Number</span><span class="value">SSC2026DEMO001</span></div>
+        <div class="field"><span class="label">Date of Birth</span><span class="value">01 January 2000</span></div>
+        <div class="field"><span class="label">Examination Date</span><span class="value">15 November 2026</span></div>
+        <div class="field"><span class="label">Reporting Time</span><span class="value">08:30 AM</span></div>
+        <div class="field"><span class="label">Examination Shift</span><span class="value">Morning Shift</span></div>
+        <div class="field"><span class="label">Category</span><span class="value">General</span></div>
+        <div class="field" style="grid-column:1/-1"><span class="label">Examination Centre</span><span class="value">Sample Examination Centre, Srinagar, Jammu &amp; Kashmir</span></div>
+      </div>
+      <div class="photo-wrap">
+        <div class="photo">CANDIDATE<br>PHOTO</div>
+        <div class="signature">Candidate Signature</div>
+      </div>
+    </div>
+    <div class="section">
+      <h3>Important Instructions</h3>
+      <div class="instructions">
+        1. This page is a demonstration template and is not valid for entry to any examination.<br>
+        2. For a real examination, use only the admit card issued through the official examination authority.<br>
+        3. Verify all candidate and examination details against the official document.
+      </div>
+    </div>
+    <div class="qr-panel">
+      <div id="qrcode" aria-label="QR code for this page"></div>
+      <div class="qr-copy">
+        <strong>QR code for this webpage</strong><br>
+        Once this page is published online, this QR code will encode its live web address. Scan it with a phone camera to open this page.
+        <div class="url" id="pageUrl"></div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer>Sample portal template • Not an official government website</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+  const liveUrl = window.location.href.split('#')[0];
+  document.getElementById('pageUrl').textContent = liveUrl;
+  if (window.QRCode) {
+    new QRCode(document.getElementById('qrcode'), {
+      text: liveUrl, width: 100, height: 100,
+      colorDark: '#12345a', colorLight: '#ffffff',
+      correctLevel: QRCode.CorrectLevel.M
+    });
+  } else {
+    document.getElementById('qrcode').textContent = 'QR library unavailable. Check internet connection.';
+  }
+</script>
+</body>
+</html>
